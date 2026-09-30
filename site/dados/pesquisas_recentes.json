@@ -1,0 +1,423 @@
+{
+  "gerado_em": "2026-09-30T19:08:30.859092+00:00",
+  "total_pesquisas": 13,
+  "pesquisas": [
+    {
+      "pesquisa_id": 17,
+      "instituto": "Quaest",
+      "registro_tse": "BR-00014/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-07-01",
+      "data_fim": "2026-07-04",
+      "data_divulgacao": "2026-07-05",
+      "amostra": 2000,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 42.0,
+            "Tarcísio de Freitas": 35.0,
+            "Ciro Gomes": 5.0,
+            "Romeu Zema": 4.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 6.0,
+            "Indeciso/Não Sabe": 4.0
+          }
+        },
+        {
+          "turno": 2,
+          "cenario": "2º Turno - Lula x Tarcísio",
+          "resultados": {
+            "Lula": 49.0,
+            "Tarcísio de Freitas": 44.0,
+            "Branco/Nulo": 4.0,
+            "Indeciso/Não Sabe": 3.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 13,
+      "instituto": "Datafolha",
+      "registro_tse": "BR-00010/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-06-20",
+      "data_fim": "2026-06-23",
+      "data_divulgacao": "2026-06-24",
+      "amostra": 2012,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 41.0,
+            "Tarcísio de Freitas": 34.0,
+            "Ciro Gomes": 6.0,
+            "Romeu Zema": 4.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 6.0,
+            "Indeciso/Não Sabe": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 16,
+      "instituto": "Quaest",
+      "registro_tse": "BR-00013/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-06-10",
+      "data_fim": "2026-06-13",
+      "data_divulgacao": "2026-06-14",
+      "amostra": 2000,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 41.0,
+            "Tarcísio de Freitas": 34.0,
+            "Ciro Gomes": 6.0,
+            "Romeu Zema": 4.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 6.0,
+            "Indeciso/Não Sabe": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 12,
+      "instituto": "Datafolha",
+      "registro_tse": "BR-00009/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-06-01",
+      "data_fim": "2026-06-04",
+      "data_divulgacao": "2026-06-05",
+      "amostra": 2006,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 40.0,
+            "Tarcísio de Freitas": 33.0,
+            "Ciro Gomes": 6.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 7.0,
+            "Indeciso/Não Sabe": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 15,
+      "instituto": "Quaest",
+      "registro_tse": "BR-00012/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-05-15",
+      "data_fim": "2026-05-18",
+      "data_divulgacao": "2026-05-19",
+      "amostra": 2000,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 40.0,
+            "Tarcísio de Freitas": 33.0,
+            "Ciro Gomes": 6.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 7.0,
+            "Indeciso/Não Sabe": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 10,
+      "instituto": "Datafolha",
+      "registro_tse": "BR-00008/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-05-10",
+      "data_fim": "2026-05-13",
+      "data_divulgacao": "2026-05-14",
+      "amostra": 2010,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 39.0,
+            "Tarcísio de Freitas": 32.0,
+            "Ciro Gomes": 6.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 8.0,
+            "Indeciso/Não Sabe": 6.0
+          }
+        },
+        {
+          "turno": 2,
+          "cenario": "2º Turno - Lula x Tarcísio",
+          "resultados": {
+            "Lula": 48.0,
+            "Tarcísio de Freitas": 43.0,
+            "Branco/Nulo": 5.0,
+            "Indeciso/Não Sabe": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 9,
+      "instituto": "Datafolha",
+      "registro_tse": "BR-00007/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-04-25",
+      "data_fim": "2026-04-28",
+      "data_divulgacao": "2026-04-29",
+      "amostra": 2004,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 38.0,
+            "Tarcísio de Freitas": 31.0,
+            "Ciro Gomes": 7.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 5.0,
+            "Branco/Nulo": 8.0,
+            "Indeciso/Não Sabe": 6.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 14,
+      "instituto": "Quaest",
+      "registro_tse": "BR-00011/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-04-20",
+      "data_fim": "2026-04-23",
+      "data_divulgacao": "2026-04-24",
+      "amostra": 2000,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 39.0,
+            "Tarcísio de Freitas": 31.0,
+            "Ciro Gomes": 7.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 8.0,
+            "Indeciso/Não Sabe": 6.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 7,
+      "instituto": "Ipec",
+      "registro_tse": "BR-00005/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-04-12",
+      "data_fim": "2026-04-15",
+      "data_divulgacao": "2026-04-16",
+      "amostra": 2000,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 37.0,
+            "Tarcísio de Freitas": 31.0,
+            "Ciro Gomes": 8.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 9.0,
+            "Indeciso/Não Sabe": 6.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 5,
+      "instituto": "AtlasIntel",
+      "registro_tse": "BR-00004/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-04-01",
+      "data_fim": "2026-04-05",
+      "data_divulgacao": "2026-04-06",
+      "amostra": 2500,
+      "margem_erro": 2.0,
+      "metodologia": "Online RDR",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 39.0,
+            "Tarcísio de Freitas": 30.0,
+            "Ciro Gomes": 7.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 5.0,
+            "Branco/Nulo": 8.0,
+            "Indeciso/Não Sabe": 6.0
+          }
+        },
+        {
+          "turno": 2,
+          "cenario": "2º Turno - Lula x Tarcísio",
+          "resultados": {
+            "Lula": 48.0,
+            "Tarcísio de Freitas": 42.0,
+            "Branco/Nulo": 6.0,
+            "Indeciso/Não Sabe": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 4,
+      "instituto": "Paraná Pesquisas",
+      "registro_tse": "BR-00003/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-03-20",
+      "data_fim": "2026-03-24",
+      "data_divulgacao": "2026-03-25",
+      "amostra": 2020,
+      "margem_erro": 2.2,
+      "metodologia": "Telefônica",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 35.0,
+            "Tarcísio de Freitas": 32.0,
+            "Ciro Gomes": 8.0,
+            "Romeu Zema": 6.0,
+            "Ronaldo Caiado": 4.0,
+            "Branco/Nulo": 8.0,
+            "Indeciso/Não Sabe": 7.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 3,
+      "instituto": "Quaest",
+      "registro_tse": "BR-00002/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-03-10",
+      "data_fim": "2026-03-13",
+      "data_divulgacao": "2026-03-14",
+      "amostra": 2000,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 38.0,
+            "Tarcísio de Freitas": 29.0,
+            "Ciro Gomes": 7.0,
+            "Romeu Zema": 5.0,
+            "Ronaldo Caiado": 5.0,
+            "Branco/Nulo": 10.0,
+            "Indeciso/Não Sabe": 6.0
+          }
+        }
+      ]
+    },
+    {
+      "pesquisa_id": 1,
+      "instituto": "Datafolha",
+      "registro_tse": "BR-00001/2026",
+      "uf": "BR",
+      "cargo": "Presidente",
+      "data_inicio": "2026-03-01",
+      "data_fim": "2026-03-03",
+      "data_divulgacao": "2026-03-04",
+      "amostra": 2002,
+      "margem_erro": 2.2,
+      "metodologia": "Presencial",
+      "impugnada": false,
+      "cenarios": [
+        {
+          "turno": 1,
+          "cenario": "Estimulada 1",
+          "resultados": {
+            "Lula": 37.0,
+            "Tarcísio de Freitas": 28.0,
+            "Ciro Gomes": 8.0,
+            "Romeu Zema": 6.0,
+            "Ronaldo Caiado": 5.0,
+            "Branco/Nulo": 9.0,
+            "Indeciso/Não Sabe": 7.0
+          }
+        },
+        {
+          "turno": 2,
+          "cenario": "2º Turno - Lula x Tarcísio",
+          "resultados": {
+            "Lula": 46.0,
+            "Tarcísio de Freitas": 40.0,
+            "Branco/Nulo": 9.0,
+            "Indeciso/Não Sabe": 5.0
+          }
+        }
+      ]
+    }
+  ]
+}

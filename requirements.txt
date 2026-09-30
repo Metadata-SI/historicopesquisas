@@ -1,0 +1,14 @@
+# Dependências principais do Agregador de Pesquisas Eleitorais 2026
+
+# Manipulação de dados e cálculo numérico
+pandas>=2.2.0
+numpy>=1.26.0
+pyyaml>=6.0.1
+
+# Coleta e extração web (Etapa 4)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+trafilatura>=1.8.0
+
+# Testes e qualidade
+pytest>=8.0.0

@@ -1,0 +1,57 @@
+{
+  "criterio_minimo_pesquisas": 5,
+  "institutos": [
+    {
+      "instituto": "AtlasIntel",
+      "total_pesquisas": 1,
+      "elegivel_house_effect": false,
+      "vieses_por_candidato": {},
+      "status": "Sem ajuste sistemático"
+    },
+    {
+      "instituto": "Datafolha",
+      "total_pesquisas": 5,
+      "elegivel_house_effect": true,
+      "vieses_por_candidato": {
+        "Lula": -0.333,
+        "Tarcísio de Freitas": -0.833,
+        "Ciro Gomes": 0.1,
+        "Romeu Zema": 0.2,
+        "Ronaldo Caiado": 0.3,
+        "Branco/Nulo": 0.2,
+        "Indeciso/Não Sabe": 0.367
+      },
+      "status": "Ajustado por Efeito Casa"
+    },
+    {
+      "instituto": "Ipec",
+      "total_pesquisas": 1,
+      "elegivel_house_effect": false,
+      "vieses_por_candidato": {},
+      "status": "Sem ajuste sistemático"
+    },
+    {
+      "instituto": "Paraná Pesquisas",
+      "total_pesquisas": 1,
+      "elegivel_house_effect": false,
+      "vieses_por_candidato": {},
+      "status": "Sem ajuste sistemático"
+    },
+    {
+      "instituto": "Quaest",
+      "total_pesquisas": 5,
+      "elegivel_house_effect": true,
+      "vieses_por_candidato": {
+        "Lula": 1.05,
+        "Tarcísio de Freitas": 0.3,
+        "Ciro Gomes": -0.467,
+        "Romeu Zema": -0.3,
+        "Ronaldo Caiado": -0.067,
+        "Branco/Nulo": 0.017,
+        "Indeciso/Não Sabe": -0.533
+      },
+      "status": "Ajustado por Efeito Casa"
+    }
+  ],
+  "gerado_em": "2026-09-30T19:08:30.859092+00:00"
+}

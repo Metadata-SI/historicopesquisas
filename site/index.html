@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregador de Pesquisas Presidenciais 2026 | Brasil</title>
+  <meta name="description" content="Painel interativo das pesquisas para presidente em 2026: médias, intervalos de confiança, mapa por estado e pesquisas individuais.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-area">
+        <img src="public/metadata-icon.png" alt="Metadata" class="brand-icon">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div class="brand-texto">
+          <h1 class="brand-title">Agregador Eleições 2026</h1>
+          <p class="brand-sub"><span class="pulse-dot"></span><span id="badge-total-pesquisas">Carregando pesquisas...</span></p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <span class="pill pill-neutro" id="pill-territorio">BRASIL</span>
+        <button id="btn-atualizar" class="btn-icon" title="Baixar os dados mais recentes do Plano Político" aria-label="Atualizar dados"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-section">
+      <h2 class="hero-title" id="hero-titulo">Eleição Presidencial Brasil 2026</h2>
+      <p class="hero-subtitle" id="hero-sub">
+        Escolha turno, base de votos, território e período. Clique num estado do mapa para aprofundar.
+      </p>
+    </section>
+
+    
+
+    <nav class="tabs-cargo" aria-label="Cargo">
+      <button class="tab-cargo active" data-cargo="presidente">Presidente</button>
+      <button class="tab-cargo" data-cargo="governador">Governadores</button>
+      <button class="tab-cargo" data-cargo="senado">Senado</button>
+    </nav>
+
+    <section class="controls-bar">
+      <div class="toggle-group" id="grupo-voto">
+        <span class="toggle-label">Base de Votos:</span>
+        <div class="btn-toggle-container">
+          <button class="btn-toggle active" data-voto="validos">Votos Válidos</button>
+          <button class="btn-toggle" data-voto="total">Com indecisos</button>
+        </div>
+      </div>
+
+      <div class="toggle-group">
+        <span class="toggle-label">Território:</span>
+        <select id="sel-territorio" class="select-input" aria-label="Território"></select>
+      </div>
+
+      <div class="toggle-group" id="grupo-cenario" style="display:none;">
+        <span class="toggle-label">Cenário:</span>
+        <select id="sel-cenario" class="select-input" aria-label="Cenário"></select>
+      </div>
+
+      <div class="toggle-group" id="grupo-periodo">
+        <span class="toggle-label">Período do gráfico:</span>
+        <div class="btn-toggle-container">
+          <button class="btn-toggle" data-periodo="30">30 dias</button>
+          <button class="btn-toggle" data-periodo="90">3 meses</button>
+          <button class="btn-toggle active" data-periodo="180">6 meses</button>
+          <button class="btn-toggle" data-periodo="0">Tudo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="painel-grid">
+      <div class="painel-card mapa-card">
+        <h3 class="painel-secao" id="mapa-titulo">Eleição presidencial</h3>
+        <div id="mapa-brasil" class="mapa-wrap" role="group" aria-label="Mapa de estados"></div>
+        <p class="mapa-legenda" id="mapa-legenda">Clique num estado para ver as estimativas e pesquisas dele.</p>
+        <button id="btn-voltar-presidente" class="btn-voltar" style="display:none;">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          Voltar para Presidente
+        </button>
+      </div>
+
+      <div class="painel-card detalhe-card">
+        <div class="painel-kicker" id="painel-kicker">BR — PRESIDENTE</div>
+        <div class="painel-titulo">
+          <h2 id="painel-nome">Brasil</h2>
+          <button id="btn-compartilhar" class="btn-action" title="Copiar o link desta visão">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+            Compartilhar
+          </button>
+        </div>
+
+        <div class="painel-turnos" id="painel-turnos">
+          <button class="btn-turno active" data-turno="1">1º turno</button>
+          <button class="btn-turno" data-turno="2">2º turno</button>
+        </div>
+
+        <div class="painel-info" id="painel-info">Carregando...</div>
+        <div id="painel-linhas" class="painel-linhas"></div>
+
+        <div class="painel-tempo" id="painel-tempo">
+          <div class="tempo-slider">
+            <input type="range" id="slider-data" min="0" max="0" value="0" step="1" aria-label="Arraste para ver a estimativa em outra data">
+            <div class="tempo-meses" id="tempo-meses"></div>
+          </div>
+          <div class="data-chip" id="data-chip" aria-live="polite"></div>
+        </div>
+        <div class="tempo-rodape" id="tempo-rodape">
+          <span>Arraste o controle para explorar o histórico</span>
+          <button id="btn-hoje" class="btn-hoje">hoje</button>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <section class="chart-card" id="card-serie">
+      <div class="chart-header">
+        <div class="chart-title-area">
+          <h2 id="serie-titulo">Tendência Estimada</h2>
+          <p id="serie-desc">Linhas: média ponderada; faixas: intervalo de confiança; pontos: pesquisas individuais.</p>
+        </div>
+        <div style="text-align:right;">
+          <label class="check-inline" id="wrap-zoom" style="margin-right:1rem;">
+            <input type="checkbox" id="chk-zoom"> Zoom nos demais candidatos
+          </label>
+          <label class="check-inline" id="wrap-pontos">
+            <input type="checkbox" id="chk-pesquisas" checked> Mostrar pesquisas
+          </label>
+          <div id="badge-data-atualizacao" style="font-size: 0.8rem; color: var(--text-muted); margin-top:0.25rem;">
+            Atualizado recentemente
+          </div>
+        </div>
+      </div>
+
+      <div id="chips-candidatos" class="chip-row" aria-label="Candidatos visíveis"></div>
+
+      <div id="grafico-serie" class="chart-container-inner">
+        <div class="loading-indicator">
+          <div class="spinner"></div>
+          <p>Carregando dados...</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title-area">
+          <h2>Pesquisas por Instituto</h2>
+          <p id="inst-desc">Evolução das pesquisas nacionais de um único instituto, como divulgadas (inclui indecisos).</p>
+        </div>
+        <select id="sel-instituto-grafico" class="select-input" aria-label="Instituto"></select>
+      </div>
+      <div id="grafico-institutos" class="chart-container-inner" style="min-height: 320px;"></div>
+    </section>
+
+    <section class="table-card">
+      <div class="table-header">
+        <div class="chart-title-area">
+          <h2 id="tabela-titulo">Pesquisas</h2>
+          <p>Clique nos cabeçalhos para ordenar; clique no nome do instituto para abrir a matéria de origem.</p>
+        </div>
+        <div class="table-tools">
+          <select id="sel-instituto-tabela" class="select-input" aria-label="Filtrar por instituto"></select>
+          <div class="search-box">
+            <span class="search-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+            <input type="text" id="tabela-busca" class="search-input" placeholder="Buscar instituto, registro, método...">
+          </div>
+          <button id="btn-csv" class="btn-action" title="Baixar as pesquisas filtradas em CSV"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> CSV</button>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="poll-table">
+          <thead>
+            <tr>
+              <th data-ordem="instituto">Instituto</th>
+              <th data-ordem="scope">UF</th>
+              <th data-ordem="dt_fim">Campo</th>
+              <th data-ordem="n">Amostra</th>
+              <th>Método</th>
+              <th>Registro TSE</th>
+              <th>Resultados</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-corpo">
+            <tr><td colspan="7" style="text-align: center; padding: 2rem;">Carregando pesquisas...</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pager" id="tabela-pager"></div>
+    </section>
+
+    <section class="methodology-section">
+      <div class="chart-title-area">
+        <h2>Sobre os Dados</h2>
+        <p>Este painel exibe o agregador do Plano Político; a metodologia completa está no site deles.</p>
+      </div>
+      <div class="methodology-grid">
+        <div class="method-card">
+          <div class="method-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Votos válidos × com indecisos</h3>
+          <p>Em "Votos Válidos" brancos, nulos e indecisos saem e os candidatos somam 100%. Em "Com indecisos" os percentuais são os divulgados pelos institutos.</p>
+        </div>
+        <div class="method-card">
+          <div class="method-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></svg></div>
+          <h3>Brasil, combinada e estados</h3>
+          <p><strong>Brasil</strong> usa só pesquisas nacionais; <strong>Combinada</strong> incorpora também as estaduais; cada <strong>UF</strong> usa apenas as pesquisas daquele estado.</p>
+        </div>
+        <div class="method-card">
+          <div class="method-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2M11.5 9.5l2-2M8.5 6.5l2-2M17.5 15.5l2-2"/></svg></div>
+          <h3>Margem de incerteza</h3>
+          <p>As faixas sombreadas e as barras de erro são os intervalos de confiança estimados pelo agregador; diferenças dentro deles não indicam liderança clara.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-parcerias">
+      <span class="footer-rotulo">Desenvolvido por</span>
+      <span class="footer-logo">
+        <img src="public/logo-metadata-footer.png" alt="Metadata" class="logo-metadata" height="18">
+      </span>
+      <span class="footer-sep" aria-hidden="true"></span>
+      <span class="footer-rotulo">Em parceria com</span>
+      <span class="footer-logos">
+        <img src="public/logo-grupo-dial-natal.png" alt="Grupo Dial Natal" class="logo-dial" height="20">
+        <img src="public/logo-98fm.png" alt="98 FM" class="logo-98" height="28">
+        <img src="public/logo-jovempan.png" alt="Jovem Pan" class="logo-jp" height="26">
+      </span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

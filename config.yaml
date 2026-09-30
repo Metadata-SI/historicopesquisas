@@ -1,0 +1,133 @@
+# Configurações do Agregador de Pesquisas Eleitorais - Brasil 2026
+# Este arquivo centraliza todos os parâmetros de agregação, modelo, coleta e validação.
+
+projeto:
+  nome: "Agregador de Pesquisas Presidenciais 2026"
+  descricao: "Agregador probabilístico e estatístico de pesquisas eleitorais registradas no TSE"
+  versao: "1.0.0"
+  eleicao_ano: 2026
+  cargo_padrao: "Presidente"
+  uf_padrao: "BR"
+
+caminhos:
+  banco_sqlite: "dados/pesquisas.db"
+  csv_quarentena: "dados/quarentena.csv"
+  dados_exemplos: "dados/exemplos/pesquisas_ficticias_2026.csv"
+  saida_json_serie: "dados/serie_diaria.json"
+  saida_json_pesquisas: "dados/pesquisas_recentes.json"
+  saida_json_institutos: "dados/tendencia_institutos.json"
+  site_dir: "site"
+
+modelo:
+  # Decaimento temporal exponencial: peso = exp(-ln(2) * delta_dias / meia_vida_dias)
+  meia_vida_dias: 14.0
+
+  # Data de corte inicial para cálculo da série temporal (AAAA-MM-DD)
+  data_inicio_serie: "2026-01-01"
+
+  # Configuração do Bootstrap não-paramétrico
+  n_bootstraps: 2000
+  intervalo_confianca:
+    percentil_inferior: 2.5
+    percentil_superior: 97.5
+
+  # Peso por tamanho de amostra: proporcional a sqrt(amostra)
+  peso_amostra_habilitado: true
+
+  # Configurações de efeitos de instituto (House Effects)
+  house_effects:
+    habilitado: true
+    min_pesquisas_instituto: 5
+    peso_padrao_instituto: 1.0
+
+  # Categorias reservadas que são excluídas no cálculo de votos válidos
+  categorias_nao_validas:
+    - "Branco/Nulo"
+    - "Brancos/Nulos"
+    - "Branco"
+    - "Nulo"
+    - "Indeciso"
+    - "Indecisos"
+    - "Indeciso/Não Sabe"
+    - "Não sabe"
+    - "Não respondeu"
+    - "Nenhum"
+
+  # Candidatos monitorados por padrão nas pesquisas presidenciais 2026
+  candidatos_monitorados:
+    - "Lula"
+    - "Flávio Bolsonaro"
+    - "Ronaldo Caiado"
+    - "Romeu Zema"
+    - "Ciro Gomes"
+    - "Augusto Cury"
+    - "Renan Santos"
+    - "Branco/Nulo"
+    - "Indeciso/Não Sabe"
+
+validacao:
+  # Critérios de consistência para pesquisas eleitorais
+  min_soma_percentual: 90.0
+  max_soma_percentual: 105.0
+  amostra_minima: 100
+  padrao_registro_tse: '^[A-Z]{2}-\d{5}/\d{4}$'
+  ignorar_impugnadas: true
+
+coleta:
+  # Boas práticas de scraping (respeito a robots.txt e servidores)
+  intervalo_minimo_segundos: 1.0
+  user_agent: "AgregadorEleitoral2026/1.0 (pesquisa-academica; contato@exemplo.org)"
+  timeout_segundos: 15
+  portais_monitorados:
+    - "g1"
+    - "folha"
+    - "estadao"
+    - "uol"
+    - "cnn_brasil"
+
+  # Feeds RSS usados para descobrir matérias (portais sem feed acessível ficam de fora)
+  feeds:
+    g1: "https://g1.globo.com/rss/g1/politica/"
+    estadao: "https://www.estadao.com.br/arc/outboundfeeds/rss/?outputType=xml"
+
+  # Histórico: sitemaps diários dos portais (o RSS guarda só as últimas ~100 matérias).
+  # A primeira execução baixa tudo desde "historico_desde" (30 a 60 min); as seguintes só o que é novo.
+  historico_desde: "2026-01-01"
+  sitemaps:
+    g1:
+      indice: "https://g1.globo.com/sitemap/g1/sitemap.xml"
+      regex_data: '/g1/(?P<y>\d{4})/(?P<m>\d{2})/(?P<d>\d{2})_'
+    estadao:
+      indice: "https://www.estadao.com.br/arc/outboundfeeds/sitemap-index-by-day/?outputType=xml"
+      regex_data: '/sitemap/(?P<y>\d{4})-(?P<m>\d{2})-(?P<d>\d{2})/'
+
+  # Sem código de registro na matéria, aceita o casamento por instituto + data
+  # se houver exatamente um registro do instituto divulgado na janela (dias).
+  janela_dias_match: 3
+
+  # Institutos: "texto" = como aparecem nas matérias; "tse" = trecho da razão social no TSE
+  institutos:
+    - nome: "Quaest"
+      texto: ["quaest"]
+      tse: ["QUAEST"]
+    - nome: "Datafolha"
+      texto: ["datafolha"]
+      tse: ["DATAFOLHA"]
+    - nome: "AtlasIntel"
+      texto: ["atlasintel", "atlas intel", "atlas/bloomberg"]
+      tse: ["ATLASINTEL"]
+    - nome: "Paraná Pesquisas"
+      texto: ["paraná pesquisas", "parana pesquisas"]
+      tse: ["INSTITUTO PARANA DE PESQUISAS"]
+    - nome: "CNT/MDA"
+      texto: ["cnt/mda", "mda"]
+      tse: ["MDA-PESQUISA"]
+    - nome: "Ipespe"
+      texto: ["ipespe"]
+      tse: ["IPESPE"]
+    - nome: "Real Time Big Data"
+      texto: ["real time big data"]
+      tse: ["REAL TIME BIG DATA"]
+    - nome: "Veritá"
+      texto: ["veritá", "verita"]
+      tse: ["VERITA"]

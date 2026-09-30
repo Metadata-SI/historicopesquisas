@@ -1,0 +1,114 @@
+# AVISO: CONJUNTO DE DADOS 100% FICTÍCIO PARA TESTES, SIMULAÇÃO E DESENVOLVIMENTO
+# NENHUM DESTES DADOS REPRESENTA RESULTADOS REAIS DE PESQUISAS OU ELEIÇÕES.
+registro_tse,instituto,uf,cargo,data_inicio,data_fim,data_divulgacao,amostra,margem_erro,metodologia,turno,cenario,candidato,percentual,impugnada,fonte_portal,fonte_url,dado_ficticio
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Lula,37.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,28.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Ciro Gomes,8.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Romeu Zema,6.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,5.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Branco/Nulo,9.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,7.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Lula,46.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Tarcísio de Freitas,40.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Branco/Nulo,9.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00001/2026,Datafolha,BR,Presidente,2026-03-01,2026-03-03,2026-03-04,2002,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Indeciso/Não Sabe,5.0,0,g1,https://g1.globo.com/exemplo-ficticio-1,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Lula,38.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,29.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Ciro Gomes,7.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Branco/Nulo,10.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00002/2026,Quaest,BR,Presidente,2026-03-10,2026-03-13,2026-03-14,2000,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-2,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Lula,35.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Tarcísio de Freitas,32.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Ciro Gomes,8.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Romeu Zema,6.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Ronaldo Caiado,4.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Branco/Nulo,8.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00003/2026,Paraná Pesquisas,BR,Presidente,2026-03-20,2026-03-24,2026-03-25,2020,2.2,Telefônica,1,Estimulada 1,Indeciso/Não Sabe,7.0,0,cnn_brasil,https://cnnbrasil.com.br/exemplo-ficticio-3,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Lula,39.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Tarcísio de Freitas,30.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Ciro Gomes,7.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Romeu Zema,5.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Ronaldo Caiado,5.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Branco/Nulo,8.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,1,Estimulada 1,Indeciso/Não Sabe,6.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,2,2º Turno - Lula x Tarcísio,Lula,48.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,2,2º Turno - Lula x Tarcísio,Tarcísio de Freitas,42.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,2,2º Turno - Lula x Tarcísio,Branco/Nulo,6.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00004/2026,AtlasIntel,BR,Presidente,2026-04-01,2026-04-05,2026-04-06,2500,2.0,Online RDR,2,2º Turno - Lula x Tarcísio,Indeciso/Não Sabe,4.0,0,estadao,https://estadao.com.br/exemplo-ficticio-4,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Lula,37.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,31.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Ciro Gomes,8.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Branco/Nulo,9.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00005/2026,Ipec,BR,Presidente,2026-04-12,2026-04-15,2026-04-16,2000,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,6.0,0,uol,https://noticias.uol.com.br/exemplo-ficticio-5,SIMULADO
+BR-00006/2026,Instituto Suspenso Fictício,BR,Presidente,2026-04-18,2026-04-20,2026-04-21,1200,2.8,Telefônica,1,Estimulada 1,Lula,20.0,1,g1,https://g1.globo.com/exemplo-ficticio-impugnada,SIMULADO
+BR-00006/2026,Instituto Suspenso Fictício,BR,Presidente,2026-04-18,2026-04-20,2026-04-21,1200,2.8,Telefônica,1,Estimulada 1,Tarcísio de Freitas,55.0,1,g1,https://g1.globo.com/exemplo-ficticio-impugnada,SIMULADO
+BR-00006/2026,Instituto Suspenso Fictício,BR,Presidente,2026-04-18,2026-04-20,2026-04-21,1200,2.8,Telefônica,1,Estimulada 1,Branco/Nulo,15.0,1,g1,https://g1.globo.com/exemplo-ficticio-impugnada,SIMULADO
+BR-00006/2026,Instituto Suspenso Fictício,BR,Presidente,2026-04-18,2026-04-20,2026-04-21,1200,2.8,Telefônica,1,Estimulada 1,Indeciso/Não Sabe,10.0,1,g1,https://g1.globo.com/exemplo-ficticio-impugnada,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Lula,38.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,31.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Ciro Gomes,7.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Branco/Nulo,8.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00007/2026,Datafolha,BR,Presidente,2026-04-25,2026-04-28,2026-04-29,2004,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-7,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Lula,39.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,32.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Ciro Gomes,6.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Branco/Nulo,8.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,6.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Lula,48.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Tarcísio de Freitas,43.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Branco/Nulo,5.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00008/2026,Datafolha,BR,Presidente,2026-05-10,2026-05-13,2026-05-14,2010,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Indeciso/Não Sabe,4.0,0,g1,https://g1.globo.com/exemplo-ficticio-8,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Lula,40.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,33.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Ciro Gomes,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Branco/Nulo,7.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00009/2026,Datafolha,BR,Presidente,2026-06-01,2026-06-04,2026-06-05,2006,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-9,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Lula,41.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,34.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Ciro Gomes,6.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Romeu Zema,4.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Branco/Nulo,6.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00010/2026,Datafolha,BR,Presidente,2026-06-20,2026-06-23,2026-06-24,2012,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,5.0,0,g1,https://g1.globo.com/exemplo-ficticio-10,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Lula,39.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,31.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Ciro Gomes,7.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Branco/Nulo,8.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00011/2026,Quaest,BR,Presidente,2026-04-20,2026-04-23,2026-04-24,2000,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-11,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Lula,40.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,33.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Ciro Gomes,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Romeu Zema,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Branco/Nulo,7.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00012/2026,Quaest,BR,Presidente,2026-05-15,2026-05-18,2026-05-19,2000,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-12,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Lula,41.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,34.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Ciro Gomes,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Romeu Zema,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Branco/Nulo,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00013/2026,Quaest,BR,Presidente,2026-06-10,2026-06-13,2026-06-14,2000,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-13,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Lula,42.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Tarcísio de Freitas,35.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Ciro Gomes,5.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Romeu Zema,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Ronaldo Caiado,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Branco/Nulo,6.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,1,Estimulada 1,Indeciso/Não Sabe,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Lula,49.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Tarcísio de Freitas,44.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Branco/Nulo,4.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
+BR-00014/2026,Quaest,BR,Presidente,2026-07-01,2026-07-04,2026-07-05,2000,2.2,Presencial,2,2º Turno - Lula x Tarcísio,Indeciso/Não Sabe,3.0,0,folha,https://folha.uol.com.br/exemplo-ficticio-14,SIMULADO
