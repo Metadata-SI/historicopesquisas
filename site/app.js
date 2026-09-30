@@ -58,7 +58,7 @@ const appState = {
   institutoGrafico: "",
   ordem: { col: "dt_fim", dir: -1 },
   pagina: 1,
-  tema: localStorage.getItem("tema_eleicoes_2026") || "dark",
+  tema: "light",              // tema fixo: claro (não há mais botão de alternância)
   dados: null
 };
 
