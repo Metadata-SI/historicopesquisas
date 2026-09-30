@@ -5,6 +5,7 @@
     { "src": "api/*.js", "use": "@vercel/node" }
   ],
   "routes": [
+    { "src": "/api/([^./]+)", "dest": "/api/$1.js" },
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/dados/(.*)", "headers": { "cache-control": "public, max-age=0, must-revalidate" }, "dest": "/site/dados/$1" },
     { "src": "/", "dest": "/site/index.html" },
