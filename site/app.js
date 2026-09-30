@@ -276,6 +276,38 @@ async function carregarDados() {
   preencherSeletores();
   atualizarCabecalhoStatus();
   atualizarVisualizacao(false);
+  atualizarSilenciosoSeAntigo();
+}
+
+/** Troca os dados em memória e redesenha, mantendo cargo, território e filtros escolhidos. */
+function aplicarDados(d) {
+  appState.dados = d;
+  if (cargoUF() && !d[appState.cargo]) {
+    appState.cargo = "presidente";
+    appState.territorio = "BR";
+  }
+  atribuirCores();
+  preencherSeletores();
+  atualizarCabecalhoStatus();
+  atualizarVisualizacao(false);
+}
+
+/** Hospedagem estática (Vercel): a função /api/dados busca os dados atuais do Plano Político. */
+async function baixarDoServidorWeb() {
+  const buscar = async (cargo) => {
+    const r = await fetch(`/api/dados?cargo=${cargo}`, { cache: "no-store" });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  };
+  const [pres, gov, sen] = await Promise.all([buscar("presidente"), buscar("governador").catch(() => null), buscar("senado").catch(() => null)]);
+  const antigo = appState.dados || {};
+  aplicarDados({
+    ...pres,
+    mapa: pres.mapa || antigo.mapa,
+    governador: gov?.governador || antigo.governador,
+    senado: sen?.senado || antigo.senado,
+    coletado_em: new Date().toISOString()
+  });
 }
 
 async function atualizarDoSite() {
@@ -283,21 +315,33 @@ async function atualizarDoSite() {
   btn.disabled = true;
   btn.classList.add("girando");
   try {
-    const resp = await fetch("/api/atualizar", { method: "POST" });
-    const corpo = await resp.json().catch(() => ({}));
-    if (!resp.ok || !corpo.ok) throw new Error(corpo.erro || `HTTP ${resp.status}`);
     const antes = appState.dados?.generated_at;
-    appState.dados = null;
-    await carregarDados();
+    try {
+      // Servidor local (rodar.bat): grava o arquivo no disco e recarrega
+      const resp = await fetch("/api/atualizar", { method: "POST" });
+      const corpo = await resp.json().catch(() => ({}));
+      if (!resp.ok || !corpo.ok) throw new Error(corpo.erro || `HTTP ${resp.status}`);
+      appState.dados = null;
+      await carregarDados();
+    } catch (e) {
+      await baixarDoServidorWeb();   // site publicado: função /api/dados
+    }
     mostrarAviso(appState.dados?.generated_at !== antes
       ? "Dados atualizados com novas pesquisas."
-      : "Já estava na versão mais recente do Plano Político.");
+      : "Você já está com os dados mais recentes.");
   } catch (e) {
-    mostrarAviso("Não foi possível atualizar: abra o site pelo rodar.bat (ou rode python -m coleta.planopolitico).", true);
+    mostrarAviso("Não foi possível atualizar agora. Tente novamente em instantes.", true);
   } finally {
     btn.disabled = false;
     btn.classList.remove("girando");
   }
+}
+
+/** Ao abrir o site publicado com dados antigos (>3 h), atualiza em segundo plano sem atrapalhar o uso. */
+function atualizarSilenciosoSeAntigo() {
+  const coletado = appState.dados?.coletado_em ? new Date(appState.dados.coletado_em).getTime() : 0;
+  const hospedado = /^https?:$/.test(location.protocol) && !/^(localhost|127\.|\[::1\])/.test(location.hostname);
+  if (hospedado && Date.now() - coletado > 3 * 3600 * 1000) baixarDoServidorWeb().catch(() => { /* mantém os dados do arquivo */ });
 }
 
 function mostrarAviso(msg, erro = false) {
