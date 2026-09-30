@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [{ "src": "site/**", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/dados/(.*)", "headers": { "cache-control": "public, max-age=0, must-revalidate" }, "dest": "/site/dados/$1" },
+    { "src": "/", "dest": "/site/index.html" },
+    { "src": "/(.*)", "dest": "/site/$1" }
+  ]
+}
